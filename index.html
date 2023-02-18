@@ -1,0 +1,645 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+     <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=HBaIdMFthcpTXQzmiV0NSVzQpAMSkIRSaF0fXxNIalT8Xi9f1BbqLRvPGcXuzLunNzPN-HEvc5h0OaMFuHTBK_-kLjZf8YfP5Kpsh-bDPRE" charset="UTF-8"></script><script type="text/javascript"
+          src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=q4_fBr5dC1xRMlBlNpT_DvmBEpTc_7Aw1Oonpwhf4bce7wlUp4GkXK6JlRx0aP0P1JjmYBaVZOQ0x7MDBDaztgCpnQD-MS-ylPicOPp22mY"
+          charset="UTF-8"></script>
+     <title>tantranotes</title>
+     <style>
+          .row {
+               display: flex;
+               flex-wrap: nowrap;
+          }
+
+          .column {
+               flex: 50%;
+               padding: 10px;
+               text-align: left;
+          }
+
+          p {
+               word-wrap: break-word;
+               text-indent: -20px;
+               padding-left: 20px;
+          }
+
+          .tab1 {
+               word-wrap: break-word;
+               padding-left: 20px;
+          }
+
+          .tab2 {
+               word-wrap: break-word;
+               padding-left: 40px;
+          }
+
+          footer {
+               margin-top: 50px;
+               border-top: 1px solid silver;
+               font-size: 0.8em;
+          }
+
+          footer ol {
+               padding-left: 20px;
+          }
+
+          /** * Initialiazing a `footnotes` counter on the wrapper */
+          article {
+               counter-reset: footnotes;
+          }
+
+          /** * Inline footnotes references * 1. Increment the counter at each new reference * 2. Reset link styles to make it appear like regular text */
+          [aria-describedby="footnote-label"] {
+               counter-increment: footnotes;
+               /* 1 */
+               text-decoration: none;
+               /* 2 */
+               color: inherit;
+               /* 2 */
+               cursor: default;
+               /* 2 */
+               outline: none;
+               /* 2 */
+          }
+
+          /** * Actual numbered references * 1. Display the current state of the counter (e.g. `[1]`) * 2. Align text as superscript * 3. Make the number smaller (since it's superscript) * 4. Slightly offset the number from the text * 5. Reset link styles on the number to show it's usable */
+          [aria-describedby="footnote-label"]::after {
+               content: '[' counter(footnotes) ']';
+               /* 1 */
+               vertical-align: auto;
+               /* 2 */
+               font-size: 1em;
+               /* 3 */
+               margin-left: 2px;
+               /* 4 */
+               color: blue;
+               /* 5 */
+               text-decoration: underline;
+               /* 5 */
+               cursor: pointer;
+               /* 5 */
+               -webkit-user-select: text;
+               -moz-user-select: text;
+               -ms-user-select: text;
+               user-select: text;
+          }
+
+          [aria-describedby="footnote-label"]::after {
+               -webkit-user-select: text;
+               -moz-user-select: text;
+               -ms-user-select: text;
+               user-select: text;
+          }
+
+          /** * Resetting the default focused styles on the number */
+          [aria-describedby="footnote-label"]:focus::after {
+               outline: thin dotted;
+               outline-offset: 2px;
+               color: brown;
+               font-weight: bold;
+          }
+
+          [aria-label="Back to content"] {
+               font-size: 1em;
+               color: darkblue;
+          }
+
+          /** * Highlight target note */
+          footer :target {
+               background: lightgrey;
+          }
+
+          /** * Visually hidden yet accessible content */
+          .p {
+               color: brown;
+               font-style: italic;
+          }
+
+          #developedby {
+               font-style: italic;
+               color: brown;
+          }
+
+          /* Style for the link container */
+          .link-container {
+               position: fixed;
+               bottom: 50%;
+               left: 0;
+               right: 0;
+               text-align: bottom;
+          }
+
+          /* Style for the links */
+          .link-container a {
+               color: rgba(255, 38, 0, 0.971);
+               text-decoration: none;
+               display: inline-block;
+               margin-right: 20px;
+               font-size: larger;
+          }
+     </style>
+</head>
+
+<body> <BR>
+     <center>श्रीसरस्वत्यै नमः <a id="TOP"></a></center><BR><BR> <a
+          href="https://shivaprasadacharya.github.io/sample1.git.io/" target="_blank">Double Column</a>
+     <div class="hyperlink">
+          <h2 id="">Content</h2>
+          <h3></h3>
+          <div class="row">
+               <div class="column" style="background-color:#bbb;">
+                    <p><a href="#ZA1">A1</a></p>
+                    <p><a href="#ZB2">B2</a></p>
+                    <p><a href="#ZC3">C3</a></p>
+                    <p><a href="#ZD4">D4</a></p>
+                    <p><a href="#ZE5">E5</a></p>
+                    <p><a href="#ZF6">F6</a></p>
+                    <p><a href="#ZG7">G7</a></p>
+                    <p><a href="#ZH8">H8</a></p>
+                    <p><a href="#ZI9">I9</a></p>
+               </div>
+
+
+               <div class="column" style="background-color:#aaa;">
+                    <p><a href="#ZJ10">J10</a></p>
+                    <p><a href="#ZK11">K11</a></p>
+                    <p><a href="#ZL12">L12</a></p>
+                    <p><a href="#ZM13">M13</a></p>
+                    <p><a href="#ZN14">N14</a></p>
+                    <p><a href="#ZO15">O15</a></p>
+                    <p><a href="#ZP16">P16</a></p>
+                    <p><a href="#ZQ17">Q17</a></p>
+                    <p><a href="#ZR18">R18</a></p>
+               </div>
+
+               <div class="column" style="background-color:#bbb;">
+                    <p><a href="#ZS19">S19</a></p>
+                    <p><a href="#ZT20">T20</a></p>
+                    <p><a href="#ZU21">U21</a></p>
+                    <p><a href="#ZV22">V22</a></p>
+                    <p><a href="#ZW23">W23</a></p>
+                    <p><a href="#ZX24">X24</a></p>
+                    <p><a href="#ZY25">Y25</a></p>
+                    <p><a href="#ZZ26">Z26</a></p>
+                    <p><a href="#ZExtra">Extra</a></p>
+               </div>
+     </div>
+
+     <article>
+          <h2 id="ZA1">A1</h2>
+          <h3></h3>
+          
+               <div class="column" style="background-color:#bbb;">
+                    <h4></h4>
+                    <p></p>
+                    <p></p>
+               </div>
+
+          
+               <div class="column" style="background-color:#bbb;">
+                    <h4></h4>
+                    <p></p>
+               </div>
+          <h2 id="ZB2">B2</h2>
+          <h3></h3>
+          
+               <div class="column" style="background-color:#bbb;">
+                    <h4></h4>
+                    <p></p>
+                    <p></p>
+               </div>
+
+          
+               <div class="column" style="background-color:#bbb;">
+                    <h4></h4>
+                    <p></p>
+               </div>
+          <h2 id="ZC3">C3</h2>
+          <h3></h3>
+          
+               <div class="column" style="background-color:#bbb;">
+                    <h4></h4>
+                    <p></p>
+                    <p></p>
+               </div>
+
+          
+               <div class="column" style="background-color:#bbb;">
+                    <h4></h4>
+                    <p></p>
+               </div>
+          <h2 id="ZD4">D4</h2>
+          <h3></h3>
+          
+               <div class="column" style="background-color:#bbb;">
+                    <h4></h4>
+                    <p></p>
+                    <p></p>
+               </div>
+
+          
+               <div class="column" style="background-color:#bbb;">
+                    <h4></h4>
+                    <p></p>
+               </div>
+          <h2 id="ZE5">E5</h2>
+          <h3></h3>
+          
+               <div class="column" style="background-color:#bbb;">
+                    <h4></h4>
+                    <p></p>
+                    <p></p>
+               </div>
+
+          
+               <div class="column" style="background-color:#bbb;">
+                    <h4></h4>
+                    <p></p>
+               </div>
+          <h2 id="ZF6">F6</h2>
+          <h3></h3>
+          
+               <div class="column" style="background-color:#bbb;">
+                    <h4></h4>
+                    <p></p>
+                    <p></p>
+               </div>
+
+          
+               <div class="column" style="background-color:#bbb;">
+                    <h4></h4>
+                    <p></p>
+               </div>
+          <h2 id="ZG7">G7</h2>
+          <h3></h3>
+          
+               <div class="column" style="background-color:#bbb;">
+                    <h4></h4>
+                    <p></p>
+                    <p></p>
+               </div>
+
+          
+               <div class="column" style="background-color:#bbb;">
+                    <h4></h4>
+                    <p></p>
+               </div>
+          <h2 id="ZH8">H8</h2>
+          <h3></h3>
+          
+               <div class="column" style="background-color:#bbb;">
+                    <h4></h4>
+                    <p></p>
+                    <p></p>
+               </div>
+
+          
+               <div class="column" style="background-color:#bbb;">
+                    <h4></h4>
+                    <p></p>
+               </div>
+          <h2 id="ZI9">I9</h2>
+          <h3></h3>
+          
+               <div class="column" style="background-color:#bbb;">
+                    <h4></h4>
+                    <p></p>
+                    <p></p>
+               </div>
+
+          
+               <div class="column" style="background-color:#bbb;">
+                    <h4></h4>
+                    <p></p>
+               </div>
+          <h2 id="ZJ10">J10</h2>
+          <h3></h3>
+          
+               <div class="column" style="background-color:#bbb;">
+                    <h4></h4>
+                    <p></p>
+                    <p></p>
+               </div>
+
+          
+               <div class="column" style="background-color:#bbb;">
+                    <h4></h4>
+                    <p></p>
+               </div>
+          <h2 id="ZK11">K11</h2>
+          <h3></h3>
+          
+               <div class="column" style="background-color:#bbb;">
+                    <h4></h4>
+                    <p></p>
+                    <p></p>
+               </div>
+
+          
+               <div class="column" style="background-color:#bbb;">
+                    <h4></h4>
+                    <p></p>
+               </div>
+          <h2 id="ZL12">L12</h2>
+          <h3></h3>
+          
+               <div class="column" style="background-color:#bbb;">
+                    <h4></h4>
+                    <p></p>
+                    <p></p>
+               </div>
+
+          
+               <div class="column" style="background-color:#bbb;">
+                    <h4></h4>
+                    <p></p>
+               </div>
+          <h2 id="ZM13">M13</h2>
+          <h3></h3>
+          
+               <div class="column" style="background-color:#bbb;">
+                    <h4></h4>
+                    <p></p>
+                    <p></p>
+               </div>
+
+          
+               <div class="column" style="background-color:#bbb;">
+                    <h4></h4>
+                    <p></p>
+               </div>
+          <h2 id="ZN14">N14</h2>
+          <h3></h3>
+          
+               <div class="column" style="background-color:#bbb;">
+                    <h4></h4>
+                    <p></p>
+                    <p></p>
+               </div>
+
+          
+               <div class="column" style="background-color:#bbb;">
+                    <h4></h4>
+                    <p></p>
+               </div>
+          <h2 id="ZO15">O15</h2>
+          <h3></h3>
+          
+               <div class="column" style="background-color:#bbb;">
+                    <h4></h4>
+                    <p></p>
+                    <p></p>
+               </div>
+
+          
+               <div class="column" style="background-color:#bbb;">
+                    <h4></h4>
+                    <p></p>
+               </div>
+
+          <h2 id="ZP16">P16</h2>
+                   <h3>Panchattava</h3>
+               <div class="column" style="background-color:#bbb;">
+                  <h4></h4>  
+                    <p><ul><li><b>Panchattava:</b>  Panchamakara or Panchatattva, also known as the Five Ms, is the Tantric term for the five transgressive substances used in a Tantric practice. These are madya (alcohol), māṃsa (meat), matsya (fish), mudrā (dry grain), and maithuna (sexual intercourse).</li><li>Taboo-breaking elements are only practiced literally by "left-hand path" tantrics (vāmācārins), whereas "right-hand path" tantrics (dakṣiṇācārins) oppose these.<a href="#fn202302181240" aria-describedby="footnote-label" id="fn202302181241"></a></li></ul>
+                    </p>
+                    <p></p>
+               </div>
+
+          
+               <div class="column" style="background-color:#bbb;">
+                    <h4></h4>
+                    <p></p>
+               </div>
+
+          <h2 id="ZQ17">Q17</h2>
+          <h3></h3>
+          
+               <div class="column" style="background-color:#bbb;">
+                    <h4></h4>
+                    <p></p>
+                    <p></p>
+               </div>
+
+          
+               <div class="column" style="background-color:#bbb;">
+                    <h4></h4>
+                    <p></p>
+               </div>
+
+          <h2 id="ZR18">R18</h2>
+          <h3></h3>
+          
+               <div class="column" style="background-color:#bbb;">
+                    <h4></h4>
+                    <p></p>
+                    <p></p>
+               </div>
+
+          
+               <div class="column" style="background-color:#bbb;">
+                    <h4></h4>
+                    <p></p>
+               </div>
+          <h2 id="ZS19">S19</h2>
+          <h3>Shaivism</h3>
+          
+               <div class="column" style="background-color:#bbb;">
+                    <h4></h4>
+                    <p><ul><li><b>Three Components:</b> According to Shaiva Siddhanta, Pati (the supreme being), Pashu (atmans) and Pasha (bondage) are eternal, self-consistent, neither distinguishable nor indivisible triad in the nature.The Shaivite three components are easily understandable as pashu (litt. cow), pasha (litt. rope) and pati (litt. cow-herd).<a href="#fn202302181354" aria-describedby="footnote-label" id="fn202302181355"></a> Pāśa (Sanskrit: पाश,  lit. "bondage", "fetter") is one of the three main components considered in Shaivism. It is defined as whole of the existence, manifest and unmanifest.</li><li><b></b></li></ul></p>
+                    <p><ul><li><b>Three Pasa:</b>anava, karma and maya.</li><li><b></b></li></ul> </p>
+               </div>
+
+          
+               <div class="column" style="background-color:#bbb;">
+                    <h4></h4>
+                    <p></p>
+               </div>
+          <h2 id="ZT20">T20</h2>
+          <h3>Tantra</h3>
+          
+               <div class="column" style="background-color:#bbb;">
+                    <h4></h4>
+                    <p>Tantra Details:<a href="https://en.wikipedia.org/wiki/Tantra" target="_blank">See Wiki</a></p>
+                    <p></p>
+               </div>
+
+          <h3 id="tattvashaivism">Tattva (Shaivism)</h3>
+               <div class="column" style="background-color:#bbb;">
+                    <h4></h4>
+                    <p><ul><li><b> No.of tattva:</b> Total 36 in which 5 are pure tattva (suddha tattva), 7 are pure-impure tattvas (vidya tattva) and 24 impure tattva (atma tattva) </li><li><b> 5 Suddha tattva:</b> Suddha tattvas, also known as Śaiva tattvas are functioning in the absolute level which leads to the Panchakritya (Five acts) - Creation-Maintenance-Destruction-Concealment-Grace of almighty.Suddha tattvas are called pure because they are directly created by Shiva himself. The 5 suddha tattva are: Shiva tattva (Nada Tattva), Sakti tattva(Bindu Tattva), Sadakhya tattva(Shiva-Sakti Tattva), Isvara tattva and Suddha Vidya Tattva (Sadvidya/Kriya tattva) </li> <li><b> 7 vidya tattva:</b> Maya, 5 Kanchukas (kāla, vidyā,  rāga, niyati, kalā) & Purusha </li><li><b> 24 Atma tattva:</b> 4 antakarana (pakriti, buddhi, akankara, mana), 5 sense organ (jyanendriya) viz  ghrāna (nose), rasana (tongue), caksus (eye), tvāk (skin) & śrotra (ear), 5 motor organs (karmendriya) viz pāyu (anus)   upasthā (sexual organ)  pāda (leg)  pāni (hand) vāk (mouth) 5 subtle element (tanmatra) viz gandha (smell) rasa (taste) rūpa (form) sparśa (touch) & śabda (sound) </li><li><b>Origin of tattva:</b>  Mahāmāyā divides itself into three aspects: śuddha māyā, śuddha-aśuddha māyā, and aśuddha māyā, and causes five, seven, and twenty-four tattvas respectively. <a href="https://en.wikipedia.org/wiki/Tattva_(Shaivism)" target="_blank">See Wiki</a></li></ul></p>
+               </div>
+          <h2 id="ZU21">U21</h2>
+          <h3></h3>
+          
+               <div class="column" style="background-color:#bbb;">
+                    <h4></h4>
+                    <p></p>
+                    <p></p>
+               </div>
+
+          
+               <div class="column" style="background-color:#bbb;">
+                    <h4></h4>
+                    <p></p>
+               </div>
+          <h2 id="ZV22">V22</h2>
+          <h3></h3>
+          
+               <div class="column" style="background-color:#bbb;">
+                    <h4></h4>
+                    <p></p>
+                    <p></p>
+               </div>
+
+          
+               <div class="column" style="background-color:#bbb;">
+                    <h4></h4>
+                    <p></p>
+               </div>
+          <h2 id="ZW23">W23</h2>
+          <h3></h3>
+          
+               <div class="column" style="background-color:#bbb;">
+                    <h4></h4>
+                    <p></p>
+                    <p></p>
+               </div>
+
+          
+               <div class="column" style="background-color:#bbb;">
+                    <h4></h4>
+                    <p></p>
+               </div>
+          <h2 id="ZX24">X24</h2>
+          <h3></h3>
+          
+               <div class="column" style="background-color:#bbb;">
+                    <h4></h4>
+                    <p></p>
+                    <p></p>
+               </div>
+
+          
+               <div class="column" style="background-color:#bbb;">
+                    <h4></h4>
+                    <p></p>
+               </div>
+          <h2 id="ZY25">Y25</h2>
+          <h3></h3>
+          
+               <div class="column" style="background-color:#bbb;">
+                    <h4></h4>
+                    <p></p>
+                    <p></p>
+               </div>
+
+          
+               <div class="column" style="background-color:#bbb;">
+                    <h4></h4>
+                    <p></p>
+               </div>
+          <h2 id="ZZ26">Z26</h2>
+          <h3></h3>
+          
+               <div class="column" style="background-color:#bbb;">
+                    <h4></h4>
+                    <p></p>
+                    <p></p>
+               </div>
+
+          
+               <div class="column" style="background-color:#bbb;">
+                    <h4></h4>
+                    <p></p>
+               </div>
+          <h2 id="ZExtra">Extra</h2>
+          <h3></h3>
+          
+               <div class="column" style="background-color:#bbb;">
+                    <h4></h4>
+                    <p></p>
+                    <p></p>
+               </div>
+
+          
+               <div class="column" style="background-color:#bbb;">
+                    <h4></h4>
+                    <p></p>
+               </div>
+          <h3>Sample</h3>
+          
+               <div class="column" style="background-color:#aaa;">
+                   <h3>नमूनाको लागि </h3>
+                    <p></p>
+                    <p>!लेख्नुहोस् <a href="#fn7" aria-describedby="footnote-label"
+                              id="fn8"></a>!निरन्तरलेख्नुहोस्</p>
+               </div>
+               <div class="column" style="background-color:#aaa;">
+                    <h3 id="Extra">  Only for Sample </h3>
+                    <p>xyz <a href="#fn9" aria-describedby="footnote-label" id="fn10"></a>
+                         Continue your text
+                         here</p>
+                    <p>xyz <a href="#fn11" aria-describedby="footnote-label" id="fn12"></a> Continue                         your text                         here</p>
+               </div>
+          </div>
+         </article>
+         
+         <footer>
+          <h2 class="visually-hidden" id="footnote-label">Endnotes</h2>
+          <h3></h3>
+          <ol>
+          
+               <li id="fn202302181240">!TypeHere:-There are three classes of men: Pashu, Vira and Divya. The operation of the Guna which produce these types affect, on the gross material plane, the animal tendencies; manifesting in the three chief physical functions: eating and drinking, whereby the Annamayakosha is maintained; and sexual intercourse, by which it is reproduced. These functions are the subject of the Panchatattva or Panchamakara ("five Ms"), as they are vulgarly called--viz.: Madya (wine), Mamsa (meat), Matsya (fish), Mudra (parched grain), and Maithuna. In ordinary parlance, Mudra means ritual gestures or positions of the body in worship and Hatha Yoga but as one of the five elements it is parched cereal and is defined as 'Bhrishta-danya dikang yadyad chavya-niyam prachaks-hate, sa mudra kathita devi sarvves-hang naganam-dini'. The Tantras speak of the five elements as Panchatattva, Kuladravya, Kulatattva and certain of the elements have esoteric names, such as Karanavari or Tirtha-vari, for wine, the fifth element being usually called Lata-sadhana (Sadhana with woman or Shakti). The five elements, moreover have various meanings, according as they form part of the Tamasika (Pashvachara), Rajasika (Virachara) or Divya or Sattvika sadhanas respectively. <a href="https://en.wikipedia.org/wiki/Panchamakara"
+                         target="_blank">!See:-wiki</a> <a href="#fn202302181241" aria-label="Back to content">[&#x21A9;]</a>
+               </li>
+                <li id="fn202302181354">!TypeHere:-  All atmans or pashus are eternally tethered by pasha and they don't know their destination. There comes pati to rear them towards the Moksha. This pati differ from ordinary cowherd as he doesn't obtain any advantages either by growing or shepherding cattle, and pashus cannot realize anything with their limited movement caused by pasha.<a href="https://en.wikipedia.org/wiki/P%C4%81%C5%9Ba"
+                    target="_blank">!See:-wiki</a> <a href="#fn202302181355" aria-label="Back to content">[&#x21A9;]</a></li>
+                       <a href="#fn202302181425" aria-describedby="footnote-label" id="fn202302181426"></a> <li id="fn202302181425">!TypeHere:- Anava (Sanskrit: आणवा, romanized: āṇavā) (from "anu", meaning an atom or an exceedingly small entity) is a state - the consciousness of the ego, the sense of "I" and "mine". This represents a sense of individuality and a separation from a general existence of any "divine plan". In Shaivism, anava is the cause of the individual soul's mistaken sense of separate identity from Universal God Shiva, and the last bond broken before union (yoga) or self-realization (moksha).<a href=""
+     target="_blank">!See:-</a> <a href="#fn202302181426" aria-label="Back to content">[&#x21A9;]</a></li>
+          </ol>
+         </footer>
+          
+     <p id="developedby"><u><b>Developed By:</b></u><br> Debaka Timilsina (M.A, M.Ed; LL.B) <br> Shiva Prasad Acharya
+          (M.Sc.; LL.M; Tantraacharya)<br> श्रीमहाशिरात्री, २०७९ <a id="BOTTOM"></a></p>
+
+     <div class="link-container">
+          <a href="#TOP">&#x25B2</a><BR><BR><BR>
+          <a href="#BOTTOM">&#x25BC</a>
+     </div>
+
+</body>
+
+</html>
+<!-- THIS IS FOR GENERATION OF TWO COLUMNS, THEIR HEADING AND THEIR CONTENT
+  
+  
+      <div class="column"
+           style="background-color:#aaa;">
+        <h3><a id=""
+             href="#BOTTOM">&#x25BC</a><a id=""
+             href="#TOP">&#x25B2</a></h3>
+        <p></p>
+      </div>
+      <div class="column"
+           style="background-color:#bbb;">
+        <h3><a id=""
+             href="#BOTTOM">&#x25BC</a><a id=""
+             href="#TOP">&#x25B2</a></h3>
+        <p></p>
+      </div>
+    </div>-->
+
+   <!--  <a href="#fn" aria-describedby="footnote-label" id="fn"></a> <li id="fn">!TypeHere:- <a href=""
+     target="_blank">!See:-</a> <a href="#fn" aria-label="Back to content">[&#x21A9;]</a></li>-->
+
+<!--USE THIS SCRIPT TO ARRANGE THE ENDNOTES IN ORDER OF MAINTEXT. 
+  
+The thing to be noted here is that when the script is active hyperlink are dysfunctional. So the script has to be activated only if we want to copy or print the content. The script starts here: 
+  
+  <script>window.onload = function() { var footnotes = document.querySelectorAll('[aria-describedby="footnote-label"]'); var newOrderedList = document.createElement('ol'); for (var i = 0; i < footnotes.length; i++) { var footnoteId = footnotes[i].getAttribute('href').substring(1); var footnoteElement = document.getElementById(footnoteId); var newListItem = document.createElement('li'); newListItem.innerHTML = footnoteElement.innerHTML; newOrderedList.appendChild(newListItem); } var footer = document.querySelector('footer'); footer.innerHTML = ''; footer.appendChild(newOrderedList); } </script>-->
+<!-- successful sample not to be deleted --> <!-- text with endnotes containing hyperlinks and return back key -->
+
+<!-- UPGRADED WITH HYPERLINK AND RETURN BACK KEY. Also way of linking a particular section of another webpage is also shown in endnote. -->
