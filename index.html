@@ -1,53 +1,68 @@
-
 <!DOCTYPE html>
 <html>
-
 <head>
      <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=HBaIdMFthcpTXQzmiV0NSVzQpAMSkIRSaF0fXxNIalT8Xi9f1BbqLRvPGcXuzLunNzPN-HEvc5h0OaMFuHTBK_-kLjZf8YfP5Kpsh-bDPRE" charset="UTF-8"></script><script type="text/javascript"
           src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=q4_fBr5dC1xRMlBlNpT_DvmBEpTc_7Aw1Oonpwhf4bce7wlUp4GkXK6JlRx0aP0P1JjmYBaVZOQ0x7MDBDaztgCpnQD-MS-ylPicOPp22mY"
           charset="UTF-8"></script>
      <title>tantranotes</title>
      <style>
+          /*style for  table*/
+          table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+  background-color: #f8f8f8;
+}
+
+tr:nth-child(odd) {
+  background-color: #e8e8e8;
+}
+/*style for body content*/
           .row {
                display: flex;
                flex-wrap: nowrap;
           }
-
           .column {
                flex: 50%;
                padding: 10px;
                text-align: left;
           }
-
           p {
                word-wrap: break-word;
                text-indent: -20px;
                padding-left: 20px;
           }
-
           .tab1 {
                word-wrap: break-word;
                padding-left: 20px;
           }
-
           .tab2 {
                word-wrap: break-word;
                padding-left: 40px;
           }
-
           footer {
                margin-top: 50px;
                border-top: 1px solid silver;
                font-size: 0.8em;
           }
-
           footer ol {
                padding-left: 20px;
           }
-
           /** * Initialiazing a `footnotes` counter on the wrapper */
           article {
                counter-reset: footnotes;
+               background-color:lightgrey;
           }
 
           /** * Inline footnotes references * 1. Increment the counter at each new reference * 2. Reset link styles to make it appear like regular text */
@@ -63,7 +78,6 @@
                outline: none;
                /* 2 */
           }
-
           /** * Actual numbered references * 1. Display the current state of the counter (e.g. `[1]`) * 2. Align text as superscript * 3. Make the number smaller (since it's superscript) * 4. Slightly offset the number from the text * 5. Reset link styles on the number to show it's usable */
           [aria-describedby="footnote-label"]::after {
                content: '[' counter(footnotes) ']';
@@ -85,14 +99,12 @@
                -ms-user-select: text;
                user-select: text;
           }
-
           [aria-describedby="footnote-label"]::after {
                -webkit-user-select: text;
                -moz-user-select: text;
                -ms-user-select: text;
                user-select: text;
           }
-
           /** * Resetting the default focused styles on the number */
           [aria-describedby="footnote-label"]:focus::after {
                outline: thin dotted;
@@ -100,28 +112,23 @@
                color: brown;
                font-weight: bold;
           }
-
           [aria-label="Back to content"] {
                font-size: 1em;
                color: darkblue;
           }
-
           /** * Highlight target note */
           footer :target {
                background: lightgrey;
           }
-
           /** * Visually hidden yet accessible content */
           .p {
                color: brown;
                font-style: italic;
           }
-
           #developedby {
                font-style: italic;
                color: brown;
           }
-
           /* Style for the link container */
           .link-container {
                position: fixed;
@@ -130,7 +137,6 @@
                right: 0;
                text-align: bottom;
           }
-
           /* Style for the links */
           .link-container a {
                color: rgba(255, 38, 0, 0.971);
@@ -141,15 +147,15 @@
           }
      </style>
 </head>
-
-<body> <BR>
-     <center>श्रीसरस्वत्यै नमः <a id="TOP"></a></center><BR><BR> <a
+<body>
+   
+     <center>श्रीसरस्वत्यै नमः <a id="TOP"></a></center><br><br> <a
           href="https://shivaprasadacharya.github.io/sample1.git.io/" target="_blank">Double Column</a>
      <div class="hyperlink">
           <h2 id="">Content</h2>
           <h3></h3>
           <div class="row">
-               <div class="column" style="background-color:#bbb;">
+               <div class="column" style="background-color:#aaa;">
                     <p><a href="#ZA1">A1</a></p>
                     <p><a href="#ZB2">B2</a></p>
                     <p><a href="#ZC3">C3</a></p>
@@ -160,8 +166,6 @@
                     <p><a href="#ZH8">H8</a></p>
                     <p><a href="#ZI9">I9</a></p>
                </div>
-
-
                <div class="column" style="background-color:#aaa;">
                     <p><a href="#ZJ10">J10</a></p>
                     <p><a href="#ZK11">K11</a></p>
@@ -173,8 +177,7 @@
                     <p><a href="#ZQ17">Q17</a></p>
                     <p><a href="#ZR18">R18</a></p>
                </div>
-
-               <div class="column" style="background-color:#bbb;">
+               <div class="column" style="background-color:#aaa;">
                     <p><a href="#ZS19">S19</a></p>
                     <p><a href="#ZT20">T20</a></p>
                     <p><a href="#ZU21">U21</a></p>
@@ -186,391 +189,239 @@
                     <p><a href="#ZExtra">Extra</a></p>
                </div>
      </div>
-
      <article>
           <h2 id="ZA1">A1</h2>
           <h3></h3>
-          
-               <div class="column" style="background-color:#bbb;">
                     <h4></h4>
                     <p></p>
                     <p></p>
-               </div>
-
-          
-               <div class="column" style="background-color:#bbb;">
                     <h4></h4>
                     <p></p>
-               </div>
           <h2 id="ZB2">B2</h2>
-          <h3></h3>
-          
-               <div class="column" style="background-color:#bbb;">
+          <h3>Comparision between BG & Tantralok</h3>
+          <p> The comparative table has been given in the endnote.<a href="#fn202303181701" aria-describedby="footnote-label" id="fn202303181702"></a></p>
+               
                     <h4></h4>
                     <p></p>
                     <p></p>
-               </div>
-
-          
-               <div class="column" style="background-color:#bbb;">
                     <h4></h4>
                     <p></p>
-               </div>
           <h2 id="ZC3">C3</h2>
           <h3></h3>
-          
-               <div class="column" style="background-color:#bbb;">
                     <h4></h4>
                     <p></p>
                     <p></p>
-               </div>
-
-          
-               <div class="column" style="background-color:#bbb;">
                     <h4></h4>
                     <p></p>
-               </div>
           <h2 id="ZD4">D4</h2>
           <h3></h3>
-          
-               <div class="column" style="background-color:#bbb;">
                     <h4></h4>
                     <p></p>
                     <p></p>
-               </div>
-
-          
-               <div class="column" style="background-color:#bbb;">
                     <h4></h4>
                     <p></p>
-               </div>
           <h2 id="ZE5">E5</h2>
           <h3></h3>
-          
-               <div class="column" style="background-color:#bbb;">
                     <h4></h4>
                     <p></p>
                     <p></p>
-               </div>
-
-          
-               <div class="column" style="background-color:#bbb;">
                     <h4></h4>
                     <p></p>
-               </div>
           <h2 id="ZF6">F6</h2>
           <h3></h3>
-          
-               <div class="column" style="background-color:#bbb;">
                     <h4></h4>
                     <p></p>
                     <p></p>
-               </div>
-
-          
-               <div class="column" style="background-color:#bbb;">
                     <h4></h4>
                     <p></p>
-               </div>
           <h2 id="ZG7">G7</h2>
           <h3></h3>
-          
-               <div class="column" style="background-color:#bbb;">
                     <h4></h4>
                     <p></p>
                     <p></p>
-               </div>
-
-          
-               <div class="column" style="background-color:#bbb;">
                     <h4></h4>
                     <p></p>
-               </div>
           <h2 id="ZH8">H8</h2>
           <h3></h3>
-          
-               <div class="column" style="background-color:#bbb;">
                     <h4></h4>
                     <p></p>
                     <p></p>
-               </div>
-
-          
-               <div class="column" style="background-color:#bbb;">
                     <h4></h4>
                     <p></p>
-               </div>
           <h2 id="ZI9">I9</h2>
-          <h3></h3>
-          
-               <div class="column" style="background-color:#bbb;">
-                    <h4></h4>
-                    <p></p>
-                    <p></p>
-               </div>
+          <h3>Ishvara Pratyabhijna Vimarsha ("ईश्वरप्रत्यभिज्ञविमर्श")</h3>
+                    <h4>Meaning</h4>
+                    <ul><p>"ईश्वरप्रत्यभिज्ञविमर्श" इति पदं त्रिभिः संस्कृतशब्दैः निर्मितम् अस्ति :। <br>
 
-          
-               <div class="column" style="background-color:#bbb;">
-                    <h4></h4>
-                    <p></p>
-               </div>
+                       <li> <b>"ईश्वर"</b>  इत्यस्य अर्थः ईश्वरः परमात्मा वा ।</li> 
+                         
+                       <li><b>"प्रत्यभिज्ञ"</b>  इत्यस्य अर्थः स्वस्य यथार्थस्वभावस्य परिचयः, स्वीकारः, साक्षात्कारः वा ।</li>  
+                         
+                       <li><b>"विमर्श"</b>  इत्यस्य अर्थः चिन्तनं, चिन्तनं, अन्वेषणं वा । </li><br>
+                         
+                      अतः ईश्वरप्रत्यभिज्ञविमर्शस्य शाब्दिकार्थः "परमात्मनः अभिज्ञानस्य चिन्तनम्" इति । इदं तांत्रिकं शास्त्रं अस्माकं यथार्थस्वभावं अवगन्तुं अस्माकं अन्तः दिव्यस्य उपस्थितिं च ज्ञातुं सम्बद्धं भवति, अन्ततः ईश्वरेण सह अस्माकं सम्बन्धस्य गहनतया अवगमनं जनयति।     <a href="#fn202303181440" aria-describedby="footnote-label" id="fn202303181441"></a></ul>
+                    
+                         
+                    
+                    <h4>Method</h4> 
+                    <ul>
+                    <p>ईश्वरप्रत्यभिज्ञविमर्षे ईश्वरेण सह अस्माकं सम्बन्धं ज्ञातुं अनेकाः पद्धतयः सुच्यन्ते । एतेषु केचन पद्धतयः सन्ति-<br>
+
+                        <li><b> आत्मचिन्तनम्:</b> एकः प्राथमिकः विधिः आत्मचिन्तनम् अथवा आत्मजिज्ञासा अस्ति, यत्र वयं स्वस्य यथार्थस्वभावस्य चिन्तनं कुर्मः, अस्माकं अन्तः दिव्यं उपस्थितिं च ज्ञातुं प्रयत्नशीलाः स्मः।</li>
+                         
+                        <li><b> ध्यानम्:</b> नियमितं ध्यानं अस्माकं मनः शान्तं कर्तुं अस्माकं अन्तः दिव्येन सह सम्बद्धं कर्तुं च साहाय्यं कर्तुं शक्नोति। ध्यानद्वारा वयं ईश्वरेण सह शान्तिः, आनन्दः, एकतायाः च गहनं भावः अनुभवितुं शक्नुमः ।</li>
+                         
+                        <li><b> शास्त्रस्य अध्ययनम्:</b> शास्त्रस्य अध्ययनं महान् आध्यात्मिकगुरुणां शिक्षां च अवगन्तुं अस्मान् परमेश्वरेण सह अस्माकं सम्बन्धं ज्ञातुं साहाय्यं कर्तुं शक्नोति तथा च आध्यात्मिकवृद्धेः मार्गे मार्गदर्शनं दातुं शक्नोति।</li> 
+                         
+                        <li><b> परसेवा:</b> अन्येषां सेवां कृत्वा वयं करुणां, सहानुभूतिम्, निस्वार्थतां च विकसितुं शक्नुमः, ये ईश्वरेण सह गहनतरसम्बन्धस्य विकासाय अत्यावश्यकाः गुणाः सन्ति।</li>
+                         
+                        <li><b>भक्ति:</b>  भक्तिं संवर्धयितुं ईश्वरसमर्पणं च अस्माकं ईश्वरीयेन सह गहनतरसम्बन्धं विकसितुं साहाय्यं कर्तुं शक्नोति। भक्तिद्वारा वयं ईश्वरस्य प्रति प्रेमस्य कृतज्ञतायाः च भावः अनुभवितुं शक्नुमः, अस्माकं जीवने तस्य उपस्थितिं च अनुभवितुं शक्नुमः। <a href="#fn202303181450" aria-describedby="footnote-label" id="fn202303181451"></a></li></p>
+                           
           <h2 id="ZJ10">J10</h2>
           <h3></h3>
-          
-               <div class="column" style="background-color:#bbb;">
                     <h4></h4>
                     <p></p>
                     <p></p>
-               </div>
-
-          
-               <div class="column" style="background-color:#bbb;">
                     <h4></h4>
                     <p></p>
-               </div>
           <h2 id="ZK11">K11</h2>
           <h3></h3>
-          
-               <div class="column" style="background-color:#bbb;">
                     <h4></h4>
                     <p></p>
                     <p></p>
-               </div>
-
-          
-               <div class="column" style="background-color:#bbb;">
                     <h4></h4>
                     <p></p>
-               </div>
           <h2 id="ZL12">L12</h2>
           <h3></h3>
-          
-               <div class="column" style="background-color:#bbb;">
                     <h4></h4>
                     <p></p>
                     <p></p>
-               </div>
-
-          
-               <div class="column" style="background-color:#bbb;">
                     <h4></h4>
                     <p></p>
-               </div>
           <h2 id="ZM13">M13</h2>
           <h3></h3>
-          
-               <div class="column" style="background-color:#bbb;">
                     <h4></h4>
                     <p></p>
                     <p></p>
-               </div>
-
-          
-               <div class="column" style="background-color:#bbb;">
                     <h4></h4>
                     <p></p>
-               </div>
           <h2 id="ZN14">N14</h2>
           <h3></h3>
-          
-               <div class="column" style="background-color:#bbb;">
                     <h4></h4>
                     <p></p>
                     <p></p>
-               </div>
-
-          
-               <div class="column" style="background-color:#bbb;">
                     <h4></h4>
                     <p></p>
-               </div>
           <h2 id="ZO15">O15</h2>
           <h3></h3>
-          
-               <div class="column" style="background-color:#bbb;">
                     <h4></h4>
                     <p></p>
                     <p></p>
-               </div>
-
-          
-               <div class="column" style="background-color:#bbb;">
                     <h4></h4>
                     <p></p>
-               </div>
-
           <h2 id="ZP16">P16</h2>
                    <h3>Panchattava</h3>
-               <div class="column" style="background-color:#bbb;">
                   <h4></h4>  
                     <p><ul><li><b>Panchattava:</b>  Panchamakara or Panchatattva, also known as the Five Ms, is the Tantric term for the five transgressive substances used in a Tantric practice. These are madya (alcohol), māṃsa (meat), matsya (fish), mudrā (dry grain), and maithuna (sexual intercourse).</li><li>Taboo-breaking elements are only practiced literally by "left-hand path" tantrics (vāmācārins), whereas "right-hand path" tantrics (dakṣiṇācārins) oppose these.<a href="#fn202302181240" aria-describedby="footnote-label" id="fn202302181241"></a></li></ul>
                     </p>
                     <p></p>
-               </div>
-
-          
-               <div class="column" style="background-color:#bbb;">
                     <h4></h4>
                     <p></p>
-               </div>
-
           <h2 id="ZQ17">Q17</h2>
           <h3></h3>
-          
-               <div class="column" style="background-color:#bbb;">
                     <h4></h4>
                     <p></p>
                     <p></p>
-               </div>
-
-          
-               <div class="column" style="background-color:#bbb;">
                     <h4></h4>
                     <p></p>
-               </div>
-
           <h2 id="ZR18">R18</h2>
           <h3></h3>
-          
-               <div class="column" style="background-color:#bbb;">
                     <h4></h4>
                     <p></p>
                     <p></p>
-               </div>
-
-          
-               <div class="column" style="background-color:#bbb;">
                     <h4></h4>
                     <p></p>
-               </div>
           <h2 id="ZS19">S19</h2>
           <h3>Shaivism</h3>
-          
-               <div class="column" style="background-color:#bbb;">
                     <h4></h4>
-                    <p><ul><li><b>Three Components:</b> According to Shaiva Siddhanta, Pati (the supreme being), Pashu (atmans) and Pasha (bondage) are eternal, self-consistent, neither distinguishable nor indivisible triad in the nature.The Shaivite three components are easily understandable as pashu (litt. cow), pasha (litt. rope) and pati (litt. cow-herd).<a href="#fn202302181354" aria-describedby="footnote-label" id="fn202302181355"></a> Pāśa (Sanskrit: पाश,  lit. "bondage", "fetter") is one of the three main components considered in Shaivism. It is defined as whole of the existence, manifest and unmanifest.</li><li><b></b></li></ul></p>
-                    <p><ul><li><b>Three Pasa:</b>anava, karma and maya.</li><li><b></b></li></ul> </p>
-               </div>
-
-          
-               <div class="column" style="background-color:#bbb;">
+                    <p><ul><li><b>Three Components:</b> According to Shaiva Siddhanta, Pati (the supreme being), Pashu (atmans) and Pasha (bondage) are eternal, self-consistent, neither distinguishable nor indivisible triad in the nature.The Shaivite three components are easily understandable as pashu (litt. cow), pasha (litt. rope) and pati (litt. cow-herd).<a href="#fn202302181354" aria-describedby="footnote-label" id="fn202302181355"></a> Pāśa (Sanskrit: पाश,  lit. "bondage", "fetter") is one of the three main components considered in Shaivism. It is defined as whole of the existence, manifest and unmanifest.</li></b></ul></p>
+                    <p><ul><li><b>Three Pasa: </b>anava, karma and maya.<a href="#fn202302181425" aria-describedby="footnote-label" id="fn202302181426"></a></li></b></li></ul>  
                     <h4></h4>
                     <p></p>
-               </div>
           <h2 id="ZT20">T20</h2>
+          <h3> Introduction to Tantralok & Abinavgupta (तन्त्रालोक अभिनवगुप्तश्च परिचय:) </h3>
+<p><li>तन्त्रलोकः भारतीयदार्शनिकः मीमांसकः अभिनवगुप्तेन रचितः तन्त्रदर्शनस्य अभ्यासस्य च प्रमुखः ग्रन्थः अस्ति । अभिनवगुप्तः हिन्दुदर्शनस्य परम्परायां तन्त्र-कश्मीर-शैव-धर्मस्य प्रखरः लेखकः भाष्यकारः च आसीत्, यया ईश्वरस्य प्रत्यक्ष-अनुभवस्य उपरि बलं दत्तम् अस्ति ।</li>
+<li>अभिनवगुप्तः भारतस्य कश्मीरे दशम-११ शताब्द्यां निवसति स्म । सः विद्वान्कुटुम्बे जातः, वैदिकशास्त्रपुराणतन्त्रेषु च कठोरशिक्षां प्राप्तवान् । सङ्गीतनृत्यकाव्यादिकलाप्रशिक्षणमपि प्राप्य काश्मीरीभाषायाः निपुणः अभवत् ।</li>
+<li>अभिनवगुप्तस्य तन्त्रकश्मीरशैवधर्मयोः लेखनानि भारतीयदर्शनस्य इतिहासे केचन गहनतमाः अन्वेषणात्मकाः च इति मन्यन्ते । तस्य कृतयः केवलं बाह्यसंस्कारस्य, सिद्धान्तानां च अनुसरणं न कृत्वा प्रत्यक्षानुभवस्य, दिव्यस्य व्यक्तिगतसाक्षात्कारस्य च महत्त्वं बोधयन्ति ।</li>
+<li>तन्त्रलोकः अभिनवगुप्तस्य महत्त्वपूर्णग्रन्थेषु अन्यतमः इति मन्यते । तन्त्रदर्शनस्य अभ्यासस्य च व्यापकः ग्रन्थः अस्ति, यः ३७ अध्यायेषु अथवा "प्रकरणेषु" विभक्तः अस्ति । ग्रन्थे परमवास्तविकतास्वभावः, गुरुस्य भूमिका, ध्याने मन्त्रयन्त्राणां प्रयोगः, कुण्डलिनीयोगस्य च अभ्यासः इत्यादयः विषयाः विस्तृताः सन्ति ।</li>
+<li>तन्त्रलोकः दार्शनिकगहनतायाः आध्यात्मिकदृष्टेः च प्रसिद्धः अस्ति, भारतीयदर्शनस्य कृतिः इति च मन्यते । तन्त्र-कश्मीर-शैव-धर्मस्य विकासे अस्य गहनः प्रभावः अभवत्, अद्यपर्यन्तं च एतासां परम्पराणां विद्भिः, अभ्यासकारिभिः च अस्य अध्ययनं पूजितं च वर्तते ।  <a href="#fn202303181532" aria-describedby="footnote-label" id="fn202303181533"></a></li></p>
+   
+ <h3>तन्त्रलोकस्य प्रथमप्रकरणस्य सारांशः (Summary of first Chapter of Tantralok)</h3>
+<li>तन्त्रलोकस्य प्रथमः अध्यायः "प्रकरणम्" वा "संबन्धः" इति उच्यते, यस्य अर्थः "सम्बन्धः" इति । अस्मिन् अध्याये कश्मीरशैवधर्मस्य मौलिकसिद्धान्ताः स्थापिताः सन्ति, यत्र "शिवः" इति अवधारणा परमवास्तविकता वा चेतनारूपेण, "शक्तिः" च शिवात् निर्गता सृजनात्मकशक्तिः वा शक्तिः इति च।</li>
+<li>अभिनवगुप्तः व्याख्यायते यत् व्यक्तिगतः आत्मनः अथवा "जीवः" परमस्य वास्तविकतायाः प्रतिबिम्बः अथवा "प्रतिबिम्बः" अस्ति। सः व्यक्तिगतात्मना परमवास्तविकात् पृथक् नास्ति, अपितु तस्य अभिव्यक्तिः एव इति बोधयति ।</li>
+<li>प्रकरणे व्यक्तिगतात्मना ये विविधाः चैतन्यावस्थाः अनुभवितुं शक्यन्ते, तेषां विषये अपि चर्चा कृता अस्ति, यथा जागरणं, स्वप्नदर्शनं, गभीरनिद्रा च अभिनवगुप्तः "तत्त्वानि" इति अवधारणां प्रवर्तयति, ये अस्तित्वस्य मौलिकाः सिद्धान्ताः अथवा वर्गाः सन्ति ।</li>
+<li>अस्मिन् सम्पूर्णे अध्याये अभिनवगुप्तः व्यक्तिगतात्मना परमवास्तविकता च सम्बन्धस्य स्वरूपस्य अवगमनस्य साधनत्वेन प्रत्यक्षानुभवस्य आत्मसाक्षात्कारस्य च महत्त्वं बोधयति बौद्धिकविश्लेषणेन वा बाह्याभ्यासेन वा एषा अवगमनं न सम्भवति, अपितु आत्मनः अन्तःस्वभावस्य प्रत्यक्षानुभवेन साक्षात्कर्तव्या इति सः बोधयति ।</li>
+<li>परमवास्तविकतायाः अवगमनस्य साधनत्वेन प्रत्यक्षानुभवस्य आत्मसाक्षात्कारस्य च महत्त्वं बोधयति, तत्सम्बद्धं च इति। <a href="#fn202303181728" aria-describedby="footnote-label" id="fn202303181729"></a></li> 
+    
           <h3>Tantra</h3>
           
-               <div class="column" style="background-color:#bbb;">
                     <h4></h4>
                     <p>Tantra Details:<a href="https://en.wikipedia.org/wiki/Tantra" target="_blank">See Wiki</a></p>
                     <p></p>
-               </div>
-
           <h3 id="tattvashaivism">Tattva (Shaivism)</h3>
-               <div class="column" style="background-color:#bbb;">
                     <h4></h4>
                     <p><ul><li><b> No.of tattva:</b> Total 36 in which 5 are pure tattva (suddha tattva), 7 are pure-impure tattvas (vidya tattva) and 24 impure tattva (atma tattva) </li><li><b> 5 Suddha tattva:</b> Suddha tattvas, also known as Śaiva tattvas are functioning in the absolute level which leads to the Panchakritya (Five acts) - Creation-Maintenance-Destruction-Concealment-Grace of almighty.Suddha tattvas are called pure because they are directly created by Shiva himself. The 5 suddha tattva are: Shiva tattva (Nada Tattva), Sakti tattva(Bindu Tattva), Sadakhya tattva(Shiva-Sakti Tattva), Isvara tattva and Suddha Vidya Tattva (Sadvidya/Kriya tattva) </li> <li><b> 7 vidya tattva:</b> Maya, 5 Kanchukas (kāla, vidyā,  rāga, niyati, kalā) & Purusha </li><li><b> 24 Atma tattva:</b> 4 antakarana (pakriti, buddhi, akankara, mana), 5 sense organ (jyanendriya) viz  ghrāna (nose), rasana (tongue), caksus (eye), tvāk (skin) & śrotra (ear), 5 motor organs (karmendriya) viz pāyu (anus)   upasthā (sexual organ)  pāda (leg)  pāni (hand) vāk (mouth) 5 subtle element (tanmatra) viz gandha (smell) rasa (taste) rūpa (form) sparśa (touch) & śabda (sound) </li><li><b>Origin of tattva:</b>  Mahāmāyā divides itself into three aspects: śuddha māyā, śuddha-aśuddha māyā, and aśuddha māyā, and causes five, seven, and twenty-four tattvas respectively. <a href="https://en.wikipedia.org/wiki/Tattva_(Shaivism)" target="_blank">See Wiki</a></li></ul></p>
-               </div>
+
           <h2 id="ZU21">U21</h2>
           <h3></h3>
-          
-               <div class="column" style="background-color:#bbb;">
                     <h4></h4>
                     <p></p>
                     <p></p>
-               </div>
-
-          
-               <div class="column" style="background-color:#bbb;">
                     <h4></h4>
                     <p></p>
-               </div>
           <h2 id="ZV22">V22</h2>
           <h3></h3>
-          
-               <div class="column" style="background-color:#bbb;">
                     <h4></h4>
                     <p></p>
                     <p></p>
-               </div>
-
-          
-               <div class="column" style="background-color:#bbb;">
                     <h4></h4>
                     <p></p>
-               </div>
           <h2 id="ZW23">W23</h2>
           <h3></h3>
-          
-               <div class="column" style="background-color:#bbb;">
                     <h4></h4>
                     <p></p>
                     <p></p>
-               </div>
-
-          
-               <div class="column" style="background-color:#bbb;">
                     <h4></h4>
                     <p></p>
-               </div>
           <h2 id="ZX24">X24</h2>
           <h3></h3>
-          
-               <div class="column" style="background-color:#bbb;">
                     <h4></h4>
                     <p></p>
                     <p></p>
-               </div>
-
-          
-               <div class="column" style="background-color:#bbb;">
                     <h4></h4>
                     <p></p>
-               </div>
           <h2 id="ZY25">Y25</h2>
           <h3></h3>
-          
-               <div class="column" style="background-color:#bbb;">
                     <h4></h4>
                     <p></p>
                     <p></p>
-               </div>
-
-          
-               <div class="column" style="background-color:#bbb;">
                     <h4></h4>
                     <p></p>
-               </div>
           <h2 id="ZZ26">Z26</h2>
           <h3></h3>
-          
-               <div class="column" style="background-color:#bbb;">
                     <h4></h4>
                     <p></p>
                     <p></p>
-               </div>
-
-          
-               <div class="column" style="background-color:#bbb;">
                     <h4></h4>
                     <p></p>
-               </div>
           <h2 id="ZExtra">Extra</h2>
           <h3></h3>
-          
-               <div class="column" style="background-color:#bbb;">
                     <h4></h4>
                     <p></p>
                     <p></p>
-               </div>
-
-          
-               <div class="column" style="background-color:#bbb;">
                     <h4></h4>
                     <p></p>
-               </div>
           <h3>Sample</h3>
-          
                <div class="column" style="background-color:#aaa;">
                    <h3>नमूनाको लागि </h3>
                     <p></p>
@@ -586,36 +437,131 @@
                </div>
           </div>
          </article>
-         
          <footer>
           <h2 class="visually-hidden" id="footnote-label">Endnotes</h2>
           <h3></h3>
           <ol>
-          
                <li id="fn202302181240">!TypeHere:-There are three classes of men: Pashu, Vira and Divya. The operation of the Guna which produce these types affect, on the gross material plane, the animal tendencies; manifesting in the three chief physical functions: eating and drinking, whereby the Annamayakosha is maintained; and sexual intercourse, by which it is reproduced. These functions are the subject of the Panchatattva or Panchamakara ("five Ms"), as they are vulgarly called--viz.: Madya (wine), Mamsa (meat), Matsya (fish), Mudra (parched grain), and Maithuna. In ordinary parlance, Mudra means ritual gestures or positions of the body in worship and Hatha Yoga but as one of the five elements it is parched cereal and is defined as 'Bhrishta-danya dikang yadyad chavya-niyam prachaks-hate, sa mudra kathita devi sarvves-hang naganam-dini'. The Tantras speak of the five elements as Panchatattva, Kuladravya, Kulatattva and certain of the elements have esoteric names, such as Karanavari or Tirtha-vari, for wine, the fifth element being usually called Lata-sadhana (Sadhana with woman or Shakti). The five elements, moreover have various meanings, according as they form part of the Tamasika (Pashvachara), Rajasika (Virachara) or Divya or Sattvika sadhanas respectively. <a href="https://en.wikipedia.org/wiki/Panchamakara"
-                         target="_blank">!See:-wiki</a> <a href="#fn202302181241" aria-label="Back to content">[&#x21A9;]</a>
+                         target="_blank">See:-wiki</a> <a href="#fn202302181241" aria-label="Back to content">[&#x21A9;]</a>
                </li>
-                <li id="fn202302181354">!TypeHere:-  All atmans or pashus are eternally tethered by pasha and they don't know their destination. There comes pati to rear them towards the Moksha. This pati differ from ordinary cowherd as he doesn't obtain any advantages either by growing or shepherding cattle, and pashus cannot realize anything with their limited movement caused by pasha.<a href="https://en.wikipedia.org/wiki/P%C4%81%C5%9Ba"
-                    target="_blank">!See:-wiki</a> <a href="#fn202302181355" aria-label="Back to content">[&#x21A9;]</a></li>
-                       <a href="#fn202302181425" aria-describedby="footnote-label" id="fn202302181426"></a> <li id="fn202302181425">!TypeHere:- Anava (Sanskrit: आणवा, romanized: āṇavā) (from "anu", meaning an atom or an exceedingly small entity) is a state - the consciousness of the ego, the sense of "I" and "mine". This represents a sense of individuality and a separation from a general existence of any "divine plan". In Shaivism, anava is the cause of the individual soul's mistaken sense of separate identity from Universal God Shiva, and the last bond broken before union (yoga) or self-realization (moksha).<a href=""
+                <li id="fn202302181354">  All atmans or pashus are eternally tethered by pasha and they don't know their destination. There comes pati to rear them towards the Moksha. This pati differ from ordinary cowherd as he doesn't obtain any advantages either by growing or shepherding cattle, and pashus cannot realize anything with their limited movement caused by pasha.<a href="https://en.wikipedia.org/wiki/P%C4%81%C5%9Ba"
+                    target="_blank">See:-wiki</a> <a href="#fn202302181355" aria-label="Back to content">[&#x21A9;]</a></li>
+                      <li id="fn202302181425"> Anava (Sanskrit: आणवा, romanized: āṇavā) (from "anu", meaning an atom or an exceedingly small entity) is a state - the consciousness of the ego, the sense of "I" and "mine". This represents a sense of individuality and a separation from a general existence of any "divine plan". In Shaivism, anava is the cause of the individual soul's mistaken sense of separate identity from Universal God Shiva, and the last bond broken before union (yoga) or self-realization (moksha).<a href=""
      target="_blank">!See:-</a> <a href="#fn202302181426" aria-label="Back to content">[&#x21A9;]</a></li>
+     <li id="fn202303181440"> The term "Ishvara Pratyabhijna Vimarsha" is composed of three Sanskrit words:<br>
+
+                        <b> "Ishvara"</b> means God or Supreme Soul.<br>
+                         
+                        <b> "Pratyabhijna"</b> means recognition, acknowledgement, or realization of one's true nature.<br>
+                         
+                        <b> "Vimarsha"</b> means reflection, contemplation, or investigation.<br>
+                         
+                         So the literal meaning of Ishvara Pratyabhijna Vimarsha is "Reflection on the Recognition of the Supreme Soul". This Tantric scripture is concerned with understanding our true nature and recognizing the presence of the divine within us, ultimately leading to a deeper understanding of our relationship with God. source: chatgpt <a href=""
+                              target="_blank"></a> <a href="#fn202303181441" aria-label="Back to content">[&#x21A9;]</a></li>
+                              <li id="fn202303181450"><b>Methodology for Ishvara Pratyabhijna Vimarsha:</b>  The  suggests several methods to understand our relationship with God. Some of these methods are:<br>
+
+                                  <b> Self-Reflection:</b> One of the primary methods is self-reflection or self-inquiry, where we contemplate our true nature and try to recognize the divine presence within us. The individual can engage in self-reflection by asking questions such as "Who am I?" and "What is my true nature?" This can help them recognize the divine presence within them and overcome their feelings of insecurity.<br>
+                                   
+                                 <b>  Meditation:</b> Regular meditation can help us still our mind and connect with the divine within us. Through meditation, we can experience a deep sense of peace, joy, and oneness with God.<br>
+                                   
+                                 <b>  Study of Scriptures:</b> Studying the scriptures and understanding the teachings of the great spiritual masters can help us understand our relationship with God and provide us with guidance on the path to spiritual growth.The individual can study spiritual scriptures such as the Bhagavad Gita or the Upanishads to gain a deeper understanding of their relationship with God and the nature of the soul.<br>
+                                   
+                                 <b>  Service to Others:</b> By serving others, we can develop compassion, empathy, and selflessness, which are essential qualities for developing a deeper relationship with God.<br>
+                                   
+                                 <b>  Devotion:</b> Cultivating devotion and surrender to God can also help us develop a deeper connection with the divine. Through devotion, we can experience a sense of love and gratitude towards God and feel His presence in our lives.source: chatgpt <a href=""
+                                        target="_blank">!See:-</a> <a href="#fn202303181451" aria-label="Back to content">[&#x21A9;]</a></li>
+                                        <li id="fn202303181532"><b>Tantraloka & Abhinavagupta:</b> 
+                                          The Tantraloka is a major treatise on the philosophy and practice of Tantra, written by the Indian philosopher and mystic Abhinavagupta. Abhinavagupta was a prolific writer and commentator on Tantra and Kashmir Shaivism, a tradition of Hindu philosophy that emphasizes the direct experience of the divine.<br>
+                                             Abhinavagupta lived in Kashmir, India, during the 10th and 11th centuries CE. He was born into a family of scholars and received a rigorous education in the Vedic scriptures, the Puranas, and the Tantras. He also received training in the arts, including music, dance, and poetry, and became a master of the Kashmiri language.<br>
+                                            Abhinavagupta's writings on Tantra and Kashmir Shaivism are considered to be some of the most profound and insightful in the history of Indian philosophy. His works emphasize the importance of direct experience and personal realization of the divine, rather than simply following external rituals and dogmas.<br>
+                                             The Tantraloka is considered to be one of Abhinavagupta's most important works. It is a comprehensive treatise on the philosophy and practice of Tantra, divided into 37 chapters or "prakaranas". The text covers a wide range of topics, including the nature of ultimate reality, the role of the guru, the use of mantras and yantras in meditation, and the practice of kundalini yoga.<br>
+                                             The Tantraloka is renowned for its philosophical depth and spiritual insight, and is considered to be a masterpiece of Indian philosophy. It has had a profound influence on the development of Tantra and Kashmir Shaivism, and continues to be studied and revered by scholars and practitioners of these traditions to this day. <a href=""
+                                                  target="_blank">!See:-</a> <a href="#fn202303181533" aria-label="Back to content">[&#x21A9;]</a></li>
+                                                  <li id="fn202303181701"><b>The Comparision table is as follows:</b><br>
+                                                       <table>
+                                                       <thead>
+                                                         <tr>
+                                                           <th>Basis of Comparison</th>
+                                                           <th>Bhagavad Gita</th>
+                                                           <th>Abhinavagupta's Tantralok</th>
+                                                         </tr>
+                                                       </thead>
+                                                       <tbody>
+                                                         <tr>
+                                                           <td>Ultimate Reality</td>
+                                                           <td>Brahman (impersonal) and Bhagavan (personal)</td>
+                                                           <td>Shiva (consciousness) and Shakti (creative power)</td>
+                                                         </tr>
+                                                         <tr>
+                                                           <td>Goal</td>
+                                                           <td>Attainment of Moksha (liberation) through detachment and renunciation</td>
+                                                           <td>Attainment of Moksha through realization of one's true nature as Shiva</td>
+                                                         </tr>
+                                                         <tr>
+                                                           <td>Nature of the Self</td>
+                                                           <td>Atman (individual self) is eternal and identical to Brahman</td>
+                                                           <td>Jiva (individual self) is a reflection of the ultimate reality and not separate from it</td>
+                                                         </tr>
+                                                         <tr>
+                                                           <td>Path to Liberation</td>
+                                                           <td>Karma Yoga (path of action), Jnana Yoga (path of knowledge), and Bhakti Yoga (path of devotion)</td>
+                                                           <td>Kashmir Shaivism and Tantra, emphasizing direct experience and self-realization</td>
+                                                         </tr>
+                                                         <tr>
+                                                           <td>Concept of Maya</td>
+                                                           <td>Maya is the illusion of the material world, which one must overcome to realize the true nature of Brahman</td>
+                                                           <td>Maya is the creative power of Shakti, which manifests the world and is not something to be overcome but rather understood and utilized</td>
+                                                         </tr>
+                                                         <tr>
+                                                           <td>Role of the Guru</td>
+                                                           <td>The guru is essential in guiding the disciple on the path to liberation</td>
+                                                           <td>The guru is important but ultimately the realization of the self comes through direct experience and self-reflection</td>
+                                                         </tr>
+                                                         <tr>
+                                                           <td>Role of the World</td>
+                                                           <td>The material world is temporary and unreal, and one must detach from it to attain liberation</td>
+                                                           <td>The world is a manifestation of Shakti and is not separate from the ultimate reality; one can attain liberation while still engaging in the world</td>
+                                                         </tr>
+                                                         <tr>
+                                                           <td>View of God</td>
+                                                           <td>God is a personal entity who is to be worshipped and surrendered to</td>
+                                                           <td>God is the ultimate reality that one can realize within oneself</td>
+                                                         </tr>
+                                                         <tr>
+                                                           <td>Concept of Dharma</td>
+                                                           <td>Dharma is one's duty or role in society and is essential to spiritual progress</td>
+                                                           <td>Dharma is important but ultimately self-realization is the highest goal</td>
+                                                         </tr>
+                                                         <tr>
+                                                           <td>Concept of Time</td>
+                                                           <td>Time is cyclical, with the universe going through cycles of creation and destruction</td>
+                                                           <td>Time is non-linear and can be transcended through spiritual realization</td>
+                                                         </tr>
+                                                         <tr>
+                                                           <td>View of Scripture</td>
+                                                           <td>Scripture is essential for understanding spiritual teachings and the path to liberation</td>
+                                                           <td>Scripture is important but ultimately direct experience and self-realization are necessary for understanding the true nature of reality</td></tr></tbody></table>
+                                                      <a href=""
+                                                          target="_blank">!See:-</a> <a href="#fn202303181702" aria-label="Back to content">[&#x21A9;]</a></li>
+                                                          <li id="fn202303181728"><b>Summary of the First Prakarana of Tantraloka:</b>
+                                                           The first chapter or "prakarana" of Tantraloka is called "Sambandha", which means "relationship". This chapter establishes the fundamental principles of Kashmir Shaivism, including the concept of "Shiva" as the ultimate reality or consciousness, and "Shakti" as the creative energy or power that emanates from Shiva.<br>
+                                                            Abhinavagupta explains that the individual self or "jiva" is a reflection or "pratibimba" of the ultimate reality. He emphasizes that the individual self is not separate from the ultimate reality, but rather is an expression of it.</br>
+                                                            The chapter also discusses the various states of consciousness that the individual self can experience, including waking, dreaming, and deep sleep. Abhinavagupta introduces the concept of "tattvas", which are the fundamental principles or categories of existence.<br>
+                                                            Throughout this chapter, Abhinavagupta emphasizes the importance of direct experience and self-realization as the means for understanding the nature of the relationship between the individual self and the ultimate reality. He stresses that this understanding cannot be achieved through intellectual analysis or external practices alone, but must be realized through direct experience of the innermost nature of the self.<br>
+                                                            Overall, the first prakarana of Tantraloka lays the groundwork for the entire text, establishing the basic principles and framework for understanding the philosophy and practice of Kashmir Shaivism and Tantra. It emphasizes the importance of direct experience and self-realization as the means for understanding the ultimate reality and one's relationship to it. <a href=""
+                                                                 target="_blank">!See:-</a> <a href="#fn202303181729" aria-label="Back to content">[&#x21A9;]</a></li>
           </ol>
          </footer>
-          
      <p id="developedby"><u><b>Developed By:</b></u><br> Debaka Timilsina (M.A, M.Ed; LL.B) <br> Shiva Prasad Acharya
-          (M.Sc.; LL.M; Tantraacharya)<br> श्रीमहाशिरात्री, २०७९ <a id="BOTTOM"></a></p>
-
+          (M.Sc.; LL.M; Tantraacharya)<br> श्रीमहाशिवरात्री, २०७९ <a id="BOTTOM"></a></p>
      <div class="link-container">
-          <a href="#TOP">&#x25B2</a><BR><BR><BR>
+          <a href="#TOP">&#x25B2</a><br>
           <a href="#BOTTOM">&#x25BC</a>
      </div>
-
+     
 </body>
-
 </html>
 <!-- THIS IS FOR GENERATION OF TWO COLUMNS, THEIR HEADING AND THEIR CONTENT
-  
-  
       <div class="column"
            style="background-color:#aaa;">
         <h3><a id=""
@@ -631,15 +577,6 @@
         <p></p>
       </div>
     </div>-->
-
    <!--  <a href="#fn" aria-describedby="footnote-label" id="fn"></a> <li id="fn">!TypeHere:- <a href=""
      target="_blank">!See:-</a> <a href="#fn" aria-label="Back to content">[&#x21A9;]</a></li>-->
-
-<!--USE THIS SCRIPT TO ARRANGE THE ENDNOTES IN ORDER OF MAINTEXT. 
-  
-The thing to be noted here is that when the script is active hyperlink are dysfunctional. So the script has to be activated only if we want to copy or print the content. The script starts here: 
-  
-  <script>window.onload = function() { var footnotes = document.querySelectorAll('[aria-describedby="footnote-label"]'); var newOrderedList = document.createElement('ol'); for (var i = 0; i < footnotes.length; i++) { var footnoteId = footnotes[i].getAttribute('href').substring(1); var footnoteElement = document.getElementById(footnoteId); var newListItem = document.createElement('li'); newListItem.innerHTML = footnoteElement.innerHTML; newOrderedList.appendChild(newListItem); } var footer = document.querySelector('footer'); footer.innerHTML = ''; footer.appendChild(newOrderedList); } </script>-->
-<!-- successful sample not to be deleted --> <!-- text with endnotes containing hyperlinks and return back key -->
-
-<!-- UPGRADED WITH HYPERLINK AND RETURN BACK KEY. Also way of linking a particular section of another webpage is also shown in endnote. -->
+<!--Updated on git hub on 202303181745-->
